@@ -1,0 +1,15 @@
+version: '2'
+services:
+    ftp:
+      image: bogem/ftp
+      container_name: ftp
+      environment:
+        - FTP_USER=ftpuser
+        - FTP_PASS=ftpuser 
+        - PASV_ADDRESS=127.0.0.1
+      volumes:
+        - /home/mrc/dev/ftp/data:/home/vsftpd
+      ports:
+        - "21:21"
+        - "20:20"
+        - "47400-47470:47400-47470"
