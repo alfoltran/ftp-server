@@ -1,4 +1,4 @@
-## FTP Server Container
+## FTP Server Docker Container
 
 docker-compose file for bogem/ftp docker image
 
@@ -9,5 +9,5 @@ https://hub.docker.com/r/bogem/ftp
 Set the environment variables defined in the docker file and execute:
 
 ```
-docker-compose up
+docker-compose up -d
 ```
